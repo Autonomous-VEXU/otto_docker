@@ -1,0 +1,9 @@
+[submodule "ros2_ws/src/otto_hardware"]
+	path = ros2_ws/src/otto_hardware
+	url = git@github.com:Autonomous-VEXU/otto_hardware.git
+[submodule "ros2_ws/src/otto_bringup"]
+	path = ros2_ws/src/otto_bringup
+	url = git@github.com:Autonomous-VEXU/otto_bringup.git
+[submodule "ros2_ws/src/otto_description"]
+	path = ros2_ws/src/otto_description
+	url = git@github.com:Autonomous-VEXU/otto_description.git
