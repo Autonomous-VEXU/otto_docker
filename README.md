@@ -19,7 +19,7 @@ A Ubuntu 24.04 docker container that has ROS 2 Jazzy.
 ## Multi-user git + GitHub Configuration
 I automated switching git + GitHub configuration files, ssh keys, and more. Here is how you get setup:
 
-#### 1.) Create SSH key:
+### 1.) Create SSH key:
 Each user needs a different SSH key to use. Here is how to set one up:
 
 **Setting up an SSH Key:**
@@ -30,7 +30,7 @@ Each user needs a different SSH key to use. Here is how to set one up:
 - view your key by running `cat ~/.ssh/<your_firstname>_ssh`
 - Copy your key and add it to GitHub
 
-#### 2.) Edit your git config file:
+### 2.) Edit your git config file:
 Within the hidden directory `~/.gitconfigs` there are multiple files. Your file's name will follow the format `.gitconfig_<initials>`. 
 You only have to fill out the rest of the fields that are commented out.
 Here is an example for reference:
@@ -42,3 +42,6 @@ Here is an example for reference:
 [core]
 	sshCommand = ssh -i ~/.ssh/my_ssh
 ```
+### 3.) Using the "CLI" Tool
+Checking the current user: `git-whoami` </br>
+Switching to a different user: `git-user-switch "firstname"`
