@@ -23,7 +23,7 @@ I automated switching git + GitHub configuration files, ssh keys, and more. Here
 Each user needs a different SSH key to use. Here is how to set one up:
 
 **Setting up an SSH Key:**
-- first generate the key using the command: `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+- first generate the key using the command: `ssh-keygen -t ed25519 -C "your_email@example.com"`
 - when prompted to, make sure you save it to the file path :`~/.ssh/<your_firstname>_ssh` (your firstname should be all lowercase!)
 - start the ssh agent with `eval "$(ssh-agent -s)"` 
 - add the key to the agent `ssh-add ~/.ssh/<your_firstname>_ssh
