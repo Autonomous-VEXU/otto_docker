@@ -1,21 +1,28 @@
 [submodule "ros2_ws/src/otto_hardware"]
 	path = ros2_ws/src/otto_hardware
 	url = git@github.com:Autonomous-VEXU/otto_hardware.git
+	branch = main
 [submodule "ros2_ws/src/otto_bringup"]
 	path = ros2_ws/src/otto_bringup
 	url = git@github.com:Autonomous-VEXU/otto_bringup.git
+	branch = main
 [submodule "ros2_ws/src/otto_description"]
 	path = ros2_ws/src/otto_description
 	url = git@github.com:Autonomous-VEXU/otto_description.git
+	branch = main
 [submodule "ros2_ws/src/ros_imu_lsm6dsv16x"]
 	path = ros2_ws/src/ros_imu_lsm6dsv16x
 	url = git@github.com:Autonomous-VEXU/ros_imu_lsm6dsv16x.git
+	branch = main
 [submodule "ros2_ws/src/ros_colorsens_apds9960"]
 	path = ros2_ws/src/ros_colorsens_apds9960
 	url = git@github.com:Autonomous-VEXU/ros_colorsens_apds9960.git
+	branch = main
 [submodule "ros2_ws/src/ros_fuelgauge_max17263"]
 	path = ros2_ws/src/ros_fuelgauge_max17263
 	url = git@github.com:Autonomous-VEXU/ros_fuelgauge_max17263.git
+	branch = main
 [submodule "ros2_ws/src/otto_navigation"]
 	path = ros2_ws/src/otto_navigation
 	url = git@github.com:Autonomous-VEXU/otto_navigation.git
+	branch = main
