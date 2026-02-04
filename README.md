@@ -14,7 +14,7 @@ A Ubuntu 24.04 docker container that has ROS 2 Jazzy.
 `docker build -t otto_docker:latest . ` <-- the dot is important!
 
 #### Running the Container:
-`docker run -it --runtime nvidia otto_docker`
+`docker run -it --runtime=nvidia --net=host --ipc=host otto_docker`
 
 ## Multi-user git + GitHub Configuration
 I automated switching git + GitHub configuration files, ssh keys, and more. Here is how you get setup:
