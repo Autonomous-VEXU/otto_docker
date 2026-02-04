@@ -7,6 +7,8 @@ RUN apt-get update && apt-get upgrade -y && \
     apt-get install -y \
     git \
     ros-jazzy-ros-gz \
+    ros-jazzy-navigation2 \
+    ros-jazzy-nav2-bringup \
     ros-jazzy-ros2-control \
     ros-jazzy-ros2-controllers \
     ros-jazzy-gz-ros2-control \
@@ -25,11 +27,11 @@ COPY ros2_ws /ros2_ws
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-# Environment for Gazebo resources
-ENV GZ_SIM_RESOURCE_PATH="$GZ_SIM_RESOURCE_PATH:/ros2_ws/src/"
-
 # change DDS middleware
 ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+
+# ROS Domain ID to match my laptop :)
+ENV ROS_DOMAIN_ID=30
 
 # Use entrypoint
 ENTRYPOINT ["/entrypoint.sh"]
