@@ -5,14 +5,12 @@ SHELL ["/bin/bash", "-c"]
 # Install required ROS and system packages
 RUN apt-get update && apt-get upgrade -y && \
     apt-get install -y \
-    git \
-    ros-jazzy-ros-gz \
+    ros-jazzy-sick-scan-xd \
     ros-jazzy-navigation2 \
     ros-jazzy-nav2-bringup \
     ros-jazzy-ros2-control \
     ros-jazzy-ros2-controllers \
     ros-jazzy-gz-ros2-control \
-    ros-jazzy-depth-image-proc \
     ros-jazzy-rmw-cyclonedds-cpp \
     dos2unix \
     && rm -rf /var/lib/apt/lists/*
