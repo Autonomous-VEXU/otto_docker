@@ -26,3 +26,6 @@
 	path = ros2_ws/src/otto_navigation
 	url = git@github.com:Autonomous-VEXU/otto_navigation.git
 	branch = main
+[submodule "ros2_ws/src/laser_scan_merger"]
+	path = ros2_ws/src/laser_scan_merger
+	url = git@github.com:Autonomous-VEXU/laser_scan_merger.git
